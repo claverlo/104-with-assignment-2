@@ -1,27 +1,45 @@
-html, body {
-    margin: 0;
-    height: 100%;
-}
-
 body {
     background-color: rgb(224, 224, 244);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2f2f2f;
+    color: rgb(111, 111, 150);
 }
 
+
 .navbar {
-    background-color: rgb(111, 111, 150) !important;
+    background-color: white;
 }
+
 
 .navbar-brand,
 .navbar .nav-link {
-    color: white !important;
+    color: white;
+    font-weight: 500;
 }
+
+
+.navbar .nav-link.active {
+    color: #ffd966;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.navbar .nav-link:hover {
+    color: #ffeaa7;
+}
+
+.page-section {
+    background-color: rgb(224, 224, 244);
+    padding: 2rem;
+    min-height: calc(100vh - 56px); 
+}
+
 
 .welcome {
     font-size: 1.4rem;
     font-weight: 600;
 }
+
 
 #pets li {
     font-size: 1.4rem;
@@ -29,13 +47,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.registration-section {
-    background-color: rgb(224, 224, 244);
-    padding: 2rem;
-    margin-bottom: 0%;
-}
-
-
-p  {font-size: 1.4rem;
+p {
+    font-size: 1.4rem;
     font-weight: 700;
 }
