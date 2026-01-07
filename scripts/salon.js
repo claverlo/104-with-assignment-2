@@ -1,29 +1,23 @@
 let salon = {
-    name: "Pet Salon",
+    name: "Happy Paws Pet Salon",
+    address: {
+        street: "123 Main Street",
+        city: "San Diego, CA",
+        zip: "1234"
+    },
     hours: {
         open: "9:00 AM",
         close: "6:00 PM"
-    },
-    phone: "619-555-1234",
-    address: {
-        street: "123 Main St",
-        city: "San Diego",
-        state: "CA",
-        zip: "92101"
     }
 };
 
-function displaySalonInfo() {
-    let info =
-        salon.name + " | " +
-        "Hours: " + salon.hours.open + " - " + salon.hours.close + " | " +
-        "Phone: " + salon.phone + " | " +
-        "Address: " + salon.address.street + ", " +
-        salon.address.city + ", " +
-        salon.address.state + " " +
-        salon.address.zip;
+function displaySalonInfo(){
+    let p = document.getElementById("SalonInformation");
 
-    document.getElementById("salonInfo").innerHTML = info;
+    p.textContent = `Welcome to ${salon.name}! 
+We are located at ${salon.address.street}, ${salon.address.city} ${salon.address.zip}. 
+Our hours of operation are from ${salon.hours.open} to ${salon.hours.close}. 
+You can contact us at 111-555-1234.`;
 }
 
 displaySalonInfo();

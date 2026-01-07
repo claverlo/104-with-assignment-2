@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -39,51 +39,54 @@
   </div>
 </nav>
 
-<section class="container-fluid registration-section">
+<section class="m-5">
 
-  <h2>Registered Pets</h2>
+  <h2>Registration</h2>
   <ol id="pets"></ol>
 
   <h2 class="mt-4">Registration</h2>
 
-  <form class="border p-4 bg-light">
+  <form class=" bg-light mb-3 p-4 border container">
 
     <div class="mb-3">
       <label class="form-label">Name</label>
-      <input type="text" class="form-control">
+      <input class="form-control" type="text" name="" id="">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Age</label>
-      <input type="number" class="form-control">
+      <input class="form-control" type="number" name="" id="">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Breed</label>
-      <input type="text" class="form-control">
+      <input class="form-control" type="text" name="" id="">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Gender</label>
-      <select class="form-select">
-        <option selected>Select gender</option>
-        <option>Male</option>
-        <option>Female</option>
+      <select class="form-select" name="" id="">
+        <option value="">Select gender</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
       </select>
     </div>
 
     <div class="mb-3">
       <label class="form-label">Service</label>
-      <select class="form-select">
-        <option selected>Select service</option>
-        <option>Grooming</option>
-        <option>Vaccination</option>
-        <option>Health check</option>
+      <select class="form-select" name="" id="">
+        <option value="">Select service</option>
+        <option value="Grooming">Grooming</option>
+        <option value="Nail Clipping">Nail Clipping</option>
+        <option value="Ear Cleaning">Ear Cleaning</option>
+        <option value="Teeth Cleaning">Teeth Cleaning</option>
       </select>
     </div>
 
-    <button type="submit" class="btn btn-primary me-2">Register</button>
-    <button type="reset" class="btn btn-secondary">Reset</button>
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-primary m-1" type="submit">Register</button>
+      <button class="btn btn-secondary m-1" type="reset">Reset</button>
+    </div>
 
   </form>
 
